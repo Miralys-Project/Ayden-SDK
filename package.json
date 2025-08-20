@@ -25,7 +25,13 @@
   "author": "Miralys-Project",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:docs": "turbo run dev --filter=docs",
+    "dev:guide": "turbo run dev --filter=guide",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "prepare": "husky"
   },
   "maintainers": [
     {

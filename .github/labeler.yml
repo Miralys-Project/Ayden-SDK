@@ -1,0 +1,52 @@
+javascript-typescript:
+  - any:
+      - '**/*.ts'
+      - '**/*.js'
+
+python:
+  - any:
+      - '**/*.py'
+
+rust:
+  - any:
+      - '**/*.rs'
+
+csharp:
+  - any:
+      - '**/*.cs'
+
+kotlin:
+  - any:
+      - '**/*.kts'
+
+documentation:
+  - any:
+      - '**/*.md'
+
+dependencies:
+  - any:
+      - '**/package.json'
+      - '**/Cargo.toml'
+      - '/pnpm-lock.yaml'
+      - '/pnpm-workspace.yaml'
+
+config:
+  - any:
+      - '**/tsconfig.json'
+      - '**/jsconfig.json'
+      - '**/eslint.config.js'
+      - '**/.prettierrc'
+      - '**/.stylelintrc'
+      - '**/.prettierignore'
+      - '**/.gitignore'
+      - '**/.npmrc'
+      - '**/.commitlintrc.json'
+      - '**/.husky/**'
+      - '**/.github/**'
+      - '**/turbo.json'
+      - '**/vite.config.ts'
+      - '**/vitest.config.ts'
+      - '**/tsconfig.base.json'
+      - '**/LICENSE'
+      - '**/.gitattributes'
+      - '**/.editorconfig'

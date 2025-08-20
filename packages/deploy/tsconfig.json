@@ -1,0 +1,10 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "outDir": "dist/esm",
+        "declaration": true,
+        "declarationDir": "dist/typings"
+    },
+    "include": ["src"]
+}

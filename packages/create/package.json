@@ -1,0 +1,49 @@
+{
+  "name": "@aydendev/create",
+  "version": "0.0.1",
+  "description": "Template for creating new Ayden bot modules.",
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "ayden",
+    "miralys"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Ayden-SDK#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Ayden-SDK/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Ayden-SDK.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+
+  "type": "module",
+
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/typings/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs",
+      "types": "./dist/typings/index.d.ts"
+    }
+  },
+
+  "files": [
+    "dist/cjs",
+    "dist/esm",
+    "dist/typings",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "prepublishOnly": "cpy ../../README.md ../../LICENSE ./ --flat && pnpm build  && node scripts/rename-cjs.js",
+    "test": "vitest run --passWithNoTests"
+  }
+}

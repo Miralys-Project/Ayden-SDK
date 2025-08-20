@@ -16,7 +16,8 @@
         "paths": {
             "@shared/*": ["packages/shared/src/*"],
             "@ui/*": ["packages/ui/src/*"]
-        }
+        },
+        "noEmitOnError": false
     },
     "include": ["apps/**/*", "packages/**/*"]
 }
