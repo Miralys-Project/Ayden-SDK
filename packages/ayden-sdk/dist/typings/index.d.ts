@@ -1,1 +1,1 @@
-export declare function testModule(): void;
+export default function testModule(): void;

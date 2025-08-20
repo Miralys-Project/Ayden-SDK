@@ -1,6 +1,6 @@
 {
   "name": "ayden-sdk",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "The Ayden SDK",
   "keywords": [
     "discord",
@@ -21,7 +21,7 @@
 
   "type": "module",
 
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
   "types": "./dist/typings/index.d.ts",
   "exports": {
@@ -33,8 +33,9 @@
   },
 
   "files": [
-    "src",
-    "typings",
+    "dist/cjs",
+    "dist/esm",
+    "dist/typings",
     "package.json",
     "README.md",
     "LICENSE"
@@ -42,7 +43,7 @@
 
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
-    "prepublishOnly": "cpy ../../README.md ../../LICENSE ./dist --flat && pnpm build",
+    "prepublishOnly": "cpy ../../README.md ../../LICENSE ./ --flat && pnpm build  && node scripts/rename-cjs.js",
     "test": "vitest run --passWithNoTests"
   }
 }

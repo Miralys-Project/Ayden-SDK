@@ -57,9 +57,6 @@ coverage/
 *.sln
 *.sw?
 
-# pnpm workspace files
-pnpm-workspace.yaml
-
 # -------------------------
 # Rust / Cargo
 # -------------------------
@@ -121,4 +118,4 @@ storybook-static
 
 .turbo
 
-apps/discord/dist
+dist
