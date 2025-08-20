@@ -42,7 +42,7 @@
 
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
-    "prepublishOnly": "cp ../../README.md ./README.md && cp ../../LICENSE ./LICENSE && pnpm build",
+    "prepublishOnly": "cpy ../../README.md ./README.md && cpy ../../LICENSE ./LICENSE && pnpm build",
     "test": "vitest run --passWithNoTests"
   }
 }
