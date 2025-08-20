@@ -1,0 +1,32 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "ui": "tui",
+    "tasks": {
+        "lint": {
+            "outputs": []
+        },
+        "test": {
+            "outputs": [],
+            "dependsOn": ["lint"],
+            "cache": true,
+            "inputs": ["!packages/ui/**"]
+        },
+        "build": {
+            "dependsOn": ["lint", "test"],
+            "outputs": ["dist/**", "build/**"],
+            "cache": true,
+            "inputs": ["!packages/prisma-client/**"]
+        },
+        "dev": {
+            "cache": false,
+            "persistent": true
+        },
+        "clean": {
+            "cache": false,
+            "outputs": []
+        },
+        "prepare": {
+            "cache": false
+        }
+    }
+}

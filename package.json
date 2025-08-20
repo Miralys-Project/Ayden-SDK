@@ -1,0 +1,81 @@
+{
+  "name": "@aydendev/ayden-sdk",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Ayden SDK is a NodeJS Framework to create module for Ayden Discord Bot Marketplace V2",
+  "keywords": [
+    "bot",
+    "discord",
+    "discord-bot",
+    "bot-discord",
+    "sdk",
+    "discord.js",
+    "ayden",
+    "miralys"
+  ],
+  "homepage": "https://github.com/Miralys-Project/Ayden-SDK#readme",
+  "bugs": {
+    "url": "https://github.com/Miralys-Project/Ayden-SDK/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miralys-Project/Ayden-SDK.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Miralys-Project",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "maintainers": [
+    {
+      "email": "tristangpt@miralys.xyz",
+      "name": "Tristan-GPT",
+      "url": "https://tristangpt.miralys.xyz"
+    },
+    {
+      "email": "contact@miralys.xyz",
+      "name": "Miralys-Project",
+      "url": "https://miralys.xyz"
+    },
+    {
+      "email": "etoiledefeu@miralys.xyz",
+      "name": "etoile2feu",
+      "url": "https://github.com/etoile2feu"
+    }
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-angular": "^19.8.1",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "@vitejs/plugin-react": "^5.0.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "conventional-changelog-cli": "^5.0.0",
+    "eslint": "^9.33.0",
+    "eslint-config-neon": "^0.2.7",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "sass": "^1.90.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-scss": "^16.0.0",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-scss": "^6.12.1",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "vercel": "^46.0.2",
+    "vitest": "^3.2.4"
+  }
+}
